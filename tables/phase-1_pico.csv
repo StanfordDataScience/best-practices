@@ -1,0 +1,5 @@
+﻿Abbreviation,Definition,Description
+P,"Patients, Population",How would you describe the patients or population that I am interested in studying? 
+I,"Intervention, Exposure","What is the main treatment, intervention, or exposure of my study?"
+C,Comparison ,"What is the alternative treatment, intervention, or exposure that I would like to compare to the main intervention? "
+O,Outcome,"What is the outcome, measurements, or affect of the intervention and the alternative intervention? "

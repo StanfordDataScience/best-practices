@@ -1,0 +1,119 @@
+---
+title: 'Open, rigorous and reproducible research: A practiotioner''s guide'
+author: "Dallas Card, Yan Min, Stylianos Serghiou"
+date: "`r Sys.Date()`"
+output:
+  bookdown::gitbook:
+    config:
+      toc:
+        collapse: subsection
+        scroll_highlight: yes
+      fontsettings:
+        theme: white
+        family: serif
+        size: 2
+    split_by: section+number
+    highlight: tango
+    includes: null
+  bookdown::pdf_book:
+    pandoc_args:
+    - --csl
+    - apa-old-doi-prefix.csl
+    includes: null
+    citation_package: natbib
+    keep_tex: yes
+site: bookdown::bookdown_site  # this renders the book through RStudio IDE
+# cover-image: images/cover.png
+always_allow_html: yes
+documentclass: book
+# bibliography:
+biblio-style: apalike
+biblatexoptions: sortcites
+link-citations: yes
+github-repo: serghiou/scientific-method-handbook
+description: Even though many scientists are expected to abide by the principles of
+  open, rigorous and reproducible research, few scientists actually receive formal
+  training in this. Indeed, there is no collection written by workings scientis for
+  working scientists about the principles of open, rigorous and transparent research
+  and how to go about practicing such research, beyond theory. This handbook represents
+  a constantly updated guide aiming to fulfil this gap and by doing so actively assist
+  all researchers in producing informative research.
+url: https\://www.github.com/serghiou/scientific-method-handbook
+tags:
+- Textbook
+- Scientific method
+- Open science
+- Reproducibility
+- Rigor
+- Research integrity
+---
+
+# Preface {-}
+
+This book starts from the premise that there is a lot we can all do to increase the benefits of research. 
+
+To begin, let's consider the main limitations with research that is not carried out and shared in an open, transparent, and reproducible way:
+
+- If papers are published in venues that are only available to those who pay for access, the vast majority of the world will not be able to see the output of all the work that went into producing it; this limits the potential reach and benefit to others.
+
+- Because of the complexity involved in many analyses, it is nearly impossible to describe every detail and choice that went into an analysis in the main paper; without accompanying code, it can be very very difficult for others to be certain about exactly what was done.
+
+- Even if code is made available, there can be additional challenges to reproducing or re-analyzing past work, such as inaccessible data or deprecated software.
+
+- If others are not able to easily re-analyze past work, that limits the ability of the community to explore other analysis pathways, combine datasets, attempt to generalize experiments to new settings, etc.
+
+- If experiments are carried out without proper care in experiment design and analysis, there are likely to be more erroneous findings in the literature, making it harder for everyone to make sense of the object of study.
+
+- The more that new researchers have to wade through results that may not be credible, they more they are delayed from making genuine advances
+
+Of course, there are numerous reasons why people don't put more effort into making their work open, transparent, and reproducible:
+
+- Perhaps most importantly, doing so does require some additional work, and current incentive structures do not necessarily reward these efforts; however, this is changing in many fields, and certain communities place a lot of value on such things. Moreover, the cost of mistakes can be high, and this sort of openness helps to avoid them.
+
+- Some data is legitimately not possible to share, due to concerns about privacy, copyright, or other considerations. Using such data will generally be less useful to the world than using more open data, but some work will of course require it. However, there are still things that can be done to avoid the worst problems, including being transparent about the analyses carried out, the protocol for collecting data, and other techniques such as pre-registration, which can bolster people's confidence in a piece of work.
+
+- Many people worry that making their data and code open to the world will expose them to risk or ridicule, either because they fear they have made mistakes, or they think it will reveal them to be a poor coder. This is understandable, but generally misplaced. It is better to catch errors early. Moreover, most people will be happy if you share any code, no matter how bad it is, and doing so is one of the best ways to improve, especially if you begin with the end in mind.
+
+- Finally, many people don't know where to start. Most guides to open science and reproducibility take the form of complete books or corpus, and try to teach an entire philosophy and comprehensive approach to research, which can be overwhelming.
+
+In this document, we take a different approach. Our main goal here is to show how there are many ways to make your research more open, transparent, and reproducible on the margin, and that each step in that direction may bring some benefit. While there will always be nuances and requirements specific to each field, in general there is a great deal that we can learn from each other, and most ideas can be applied to any domain.
+
+In summary, this handbook is a guide to making science more open, transparent, and reproducible by presenting best practices in a way that is:
+
+- modular: individual ideas can be used separately or combined
+- practical: focused on the most tractable and impactful practices
+- general: applicable to any field that works with data and statistical analysis
+- concise: aimed at the busy scientists who doesn't have time to take a full course right now
+
+We break this guide down into three mains sections. Each section contains many modular components, each of which can be considered and used independently or in combination with the others:
+
+- Section 1: Careful study design to help ensure and demonstrate that results and conclusions are valid and useful:
+
+  - Thoughtful determination of experimental parameters, such as using power analysis to estimate an appropriate sample size
+  - Distinguishing between exploratory and confirmatory research
+  - Pre-analysis planning of statistical analyses
+  - Ensuring that all relevant data is collected in order to be comparable with past work
+  - Additional considerations, such as pre-registration, planning for potential problems, and consideration of ethical implications.
+  
+- Section 2: Adopting best practices in analyzing data and reporting results:
+
+  - Preliminary: decisions and considerations before working with any data.
+  - Statistical analysis plan: plan your analytic approach beforehand.
+  - Data generation: generate an appropriate set of data.
+  - Data preparation: transparently prepare your data for data analysis.
+  - Data visualization: visualize all data using informative visualizations.
+  - Data summarization: summarize all data using appropriate statistics.
+  - Data analysis: analyze all data and avoid common blunders.
+  - Data analysis - medicine: a few more considerations for medical research.
+  - Statistical analysis report: report transparently and comprehensively.
+  - Examples: published literature exemplifying principles of this manual.
+  
+- Section 3: Making relevant research materials available to all:
+  - Open Data: making the raw data available for further research and replication
+  - Open Source Code: making the analysis pipeline transparent and available for others to borrow or verify
+  - Reproducible Environments: making not just the data and code available for others, but making it easy for them to re-run the analysis in an easily reproducible manner
+  - Open Publication Models such that anyone can see the scholarly output associated with the work
+  - Documenting Processes and Decisions: making it clear to interested parties not only what was done and how, but also why, by mechanisms such as open lab notebooks
+
+
+In addition, appendices cover additional resources, such as frequently asked questions, discipline-specific considerations and linked to additional resources (of which  there are plenty!)
