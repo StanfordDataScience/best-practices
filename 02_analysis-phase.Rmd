@@ -1,0 +1,111 @@
+---
+output:
+  bookdown::gitbook:
+    lib_dir: book_assets
+---
+
+# Analysis phase
+
+This portion of the manual offers practical guidance and warns against common pitfalls that may be encountered from the point of data generation to the point of data analysis. This collection does not aim to be exhaustive, but rather offer a collection of major pain points that we have encountered in the process of scientific research and an account of how we, and many others, have gone about solving them. The scientific field is enormous and ever changing, for which reason we do not expect our guidance to perfectly apply across all fields, or any field for that matter. However, we do hope that, even if much of this does not apply to you, that it will inspire you and give you a sense of how to go about practicing transparent, rigorous and reproducible science within your own field in your own way.
+
+
+## Start here
+
+_“If you have built castles in the air, your work need not be lost; that is where they should be. Now put the foundations under them.”_
+_Henry David Thoreau_
+
+**Read this manual BEFORE you begin your study.** You need to know what data you should be gathering and what analyses you should be reporting before you even begin your study. This is because there are analyses that you should produce before you even begin (e.g. power analysis) and data that you should be gathering from the get go (e.g. confounding variables used by other teams) that you may not even think of gathering in advance.
+
+**Recognize and avoid cognitive biases.** It is important to recognize that we are all subject to [cognitive biases](https://en.wikipedia.org/wiki/List_of_cognitive_biases) and take steps to mitigate them before you even begin. [Confirmation bias](https://en.wikipedia.org/wiki/Confirmation_bias#Science_and_scientific_research) is the tendency to generate, analyze and interpret data designed to confirm rather than challenge your hypotheses. Examples of this in science may include running experiments that you know are more likely to confirm rather than dispute your hypotheses, or avoiding tests that may cast a doubt on the robustness of your findings. Try out [this](https://www.nytimes.com/interactive/2015/07/03/upshot/a-quick-puzzle-to-test-your-problem-solving.html) fun problem by New York Times for a demonstration of confirmation bias. [Overconfidence bias](https://en.wikipedia.org/wiki/Overconfidence_effect) is the tendency to place more confidence in your judgement or ability than is due. Examples of this in science may include attribution of failed replications to someone else’s inferior skill or attribution of unexpectedly positive results to your superior skill. Try out [this](http://messymatters.com/calibration/) fun test of your ability to assess subjective probability (overconfidence bias arises from a miscalibration of subjective probability). There are [many other relevant biases](https://en.wikipedia.org/wiki/Cognitive_bias), such as availability bias, anchoring bias or affinity bias.
+
+_**Pro tip:** I often find myself being overconfident in my analyses and not running that extra “pointless” check or test. I must say that I have never, ever, ran that extra test without obtaining insightful results that more often than not challenge the confidence I had initially placed in my analyses._
+
+
+## Statistical Analysis Plan (SAP)
+
+_“To consult the statistician after an experiment is finished is often merely to ask him to conduct a post mortem examination. He can perhaps say what the experiment died of.”_
+_Ronald Fisher_
+
+**Collaborate with a statistician.** Yes, the time to speak with a statistician is BEFORE you even begin your study, not after! You can request free statistical consulting at Stanford here, no matter what research you do. By collaborating with a statistician, you are not only improving the quality of your analyses, but you are also learning from the experts. Collaborating with a statistician is a strength, not a weakness.
+
+**Find the most appropriate reporting guidelines.** These phenomenally useful guidelines indicate how authors should go about reporting their study appropriately. Different disciplines maintain different guidelines for different study designs, most of which can be found at the EQUATOR Network. For example, guidelines exist on how to report randomized clinical trials, observational studies, study protocols, animal pre-clinical studies, lab-based experimental studies, machine learning predictive models, and many more.
+
+_**Pro tip:** There may not be a reporting guideline that fits your needs. I find it helpful to just go through relevant guidelines, extract what elements apply to my study and use them as a quasi-guideline._
+
+**Convert the identified guidelines into your first draft.** Take the appropriate reporting guidelines and turn them into subheadings. Then, fill in the blanks to the best of your ability. Do not start your study unless you have completed everything that you could possibly complete a priori. Congratulations, you did not only just create a rudimentary protocol, but in fact you just created your first draft! Yes, the first draft arrived before you even began your study, at zero extra effort. And yes, you write and publish a paper, whether the results support your hypotheses or not.
+
+_**Pro tip:** As soon as you publish a couple of times using your preferred reporting guidelines, you can save time by simply using previous papers as the foundation for your next paper._
+
+_**Pro tip:** Do not worry if your methods are too long. This is the 21st century, not the 1950s - should your eventual paper be too long, simply shift the more detailed version of your work to the supplement (see more details about this below). Having said that, there is much merit in being concise and little merit in dumping an enormous amount of barely meaningful information in the supplement._
+
+Cite the guidelines you have chosen. Cite the reporting guidelines that you are using (e.g. at the very top of your methods section). By doing so, you are spreading the word, acknowledging those that spent time producing these guidelines, boosting the perceived reliability of your own study and helping meta-researchers interested in studying the use of such guidelines.
+
+Clarify a priori versus post hoc decisions. As mentioned in the first part of this manual, it is extremely important to distinguish between confirmatory (a priori) versus exploratory (post hoc) analyses. The former are independent of the data at hand, whereas the latter are dependent and decided upon after the data at hand were seen. Often in today’s literature, exploratory studies masquerade as confirmatory studies, because of incentives, such as being published in more prestigious journals. This is often referred to as HARKing (Hypothesizing After the Results are Known) and it refers to studies where an exploratory analysis led to a specific hypothesis, which is then studied as if the authors intended to study this hypothesis all along. This is problematic because the hypothesis is highly dependent on the particular sample (had we used a different sample this hypothesis may not have been deemed relevant) and it conveys a misleading level of confidence to readers. The beauty of having already created a protocol as your first draft is that you have already clarified which analyses were decided upon a priori - you can then go back and add any future data-dependent analyses to this draft by indicating that the following decisions were taken post hoc. 
+
+_**Pro tip:** There is NOTHING wrong with clearly reporting that your study is an exploratory analysis - in fact, doing so would afford a freedom and peace of mind to approach your data however you want, rather than being stranded in the no man’s land of trying to use your exploratory analysis  but also constrain yourself to comply with the requirements of a confirmatory analysis, doing neither of the two well in the end._
+
+Create a Statistical Analysis Plan (SAP). Even though not always necessary or universally recommended, you can take your aforementioned protocol up a notch by creating a SAP (all before you collect your data). This is a more detailed account of your statistical approach, even though a well-created protocol should have already mentioned most of what a SAP may include. Two excellent guides on how to construct a SAP can be found here and here.
+
+_**Pro tip:** Creating a SAP may look daunting at first, but you really only have to work through the process once. After that, as mentioned above, you can simply model future SAPs onto what you did before._
+
+_**Pro tip:** As indicated above, should you decide to create a more detailed SAP, do not deviate from the format of your eventual paper - you do not want to be duplicating any work. If by being rigorous and transparent you are spending more time on a project than you did before, you are probably doing something wrong._
+
+**Register your protocol/SAP.** Optionally, you can submit your protocol for registration at repositories, such as ClinicalTrials.gov and Open Science Framework (OSF). Registration will: (a) hold you accountable to your a priori decisions (we are all human, the drive to change a priori decisions can be substantial and having the registration anchor can be a useful cognitive lifeboat), (b) inform researchers working in the same field about studies underway (if afraid of scooping, you can often request an embargo period) and (c) assist meta-researchers interested in studying how many studies are done and which of those studies are published.
+
+**Publish your protocol.** Optionally, you can do one of two things: (a) you can have your paper accepted on the basis of its protocol alone and before the results are known (this is known as a registered report) or (b) publish it as a standalone protocol, if the protocol itself represents substantial work (this is often done in medicine for large clinical trials or prospective cohort studies).
+Pro tip: I always begin my write up before I even start working on a study. I take the appropriate reporting guideline, convert it into subheadings and then fill in the blanks. I fill in whatever is not data-dependent before the study (which is the majority of subheadings) and whatever is data-dependent after the study. Any data-dependent changes I clearly indicate as “post hoc.”
+
+
+## Data generation
+
+_“No amount of experimentation can prove me right; a single experiment can prove me wrong.”_
+_Albert Einstein_
+
+**If possible, run a pilot.** It is very common to realize shortcomings in your protocol as soon as you start gathering data. A small pilot study is often a great way to avoid changing your protocol after study initiation and pretending that this was the protocol all along. If you do absolutely need to change your protocol, indicate what changes were made post hoc because such decisions are likely data-dependent. Again, there is nothing wrong in being clear about post hoc decisions and nothing wrong about reporting failed experiments; however, much is wrong with not reporting data-dependent changes or initial failed experiments and these may even amount to scientific misconduct.
+
+_**Pro tip:** Pilots can be very helpful in imaging studies, where saturated pixels may take you outside of your instrument’s linear range and complicate your analyses - use pilot studies to identify the desired antibody dilutions._
+
+**DO NOT pick and choose.** It is often convenient, and very tempting, to pick and choose data points that promote your point of view, but do not necessarily accurately reflect the whole. For example, in microscopy you may image a field of view that clearly illustrates the effect of interest to you, whether or not this is a representative sample of the whole picture. Similarly, in clinical trials you might not enroll patients that you think are less likely to respond, or overzealously enroll patients that you think are likely to respond. This practice may wrongly inflate the effect you are trying to quantify and wrongly deflate the observed uncertainty. In clinical trials this is mitigated by blinding (the doctor and patient do not know whether they are on treatment or placebo) and allocation concealment (the doctor does not know whether they are about to allocate the patient to treatment or placebo). In microscopy, this can be mitigated by only imaging at a number of predefined XY coordinates. Feel free to come up with methods that suit your needs, using the guiding principles of being systematic, honest and not fooling yourself or others.
+
+**There is nothing magical about repeats of three.** This is particularly relevant to biologists, who seem to like repeating experiments three times, or even four times if they want to feel extra rigorous (or, if the first three did not reach statistical significance, God forbid). First, always decide how many times you would like to repeat BEFORE you begin your experiments. If you have already begun, then it is too late and deciding how many times to repeat an experiment on the basis of the p-value is extremely problematic. If you cannot resist the temptation, (a) clearly mention in your paper that you decided to add an extra repeat to achieve significance and (b) speak with a statistician to help you analyze your data (it is possible to account for chasing the p-value in your statistical analysis and still maintain valid inference). Second, use a power analysis to decide how many repeats you need. You may be surprised to realize how many repeats you might need for an 80% probability to obtain a sufficiently low p-value when the null hypothesis is false. If you do not know how to do a power analysis, (a) speak with a statistician, (b) most statistical packages can do this for you (see here for GraphPad Prism; see here for R).
+
+_**Pro tip:** Yes, doing a power analysis for the first time will be time-consuming and will feel daunting and pointless. However, after a few times, you will become a pro._
+
+**Pre-determine your sample size or repetitions.** Known as stopping time, this is the time you stop data generation. This time may be the number of participants you decide to recruit, the number of experiment repetitions you decide to run or the number of simulations you decide to run. Not abiding to such a stopping rule is sometimes referred to as sampling to a foregone conclusion and it is a bulletproof method to get as small a p-value as you like. However, this p-value is at best meaningless and at worst deceitful. As indicated above, always decide your stopping time BEFORE you begin your study. If you do want to proceed until you get a low enough p-value, this is possible, but you will need to analyze your data differently - if you do not know how to do that, speak with a statistician.
+
+**Use a specific seed when simulating data.** If your data generation involves data simulation, always use a seed (e.g. in R do “set.seed(123)”), otherwise your procedure will not be reproducible (because every time you run the code you will get a different set of random numbers). Note that random numbers may appear in algorithms that you did not even expect. Also note that if you are using parallel processing you will need to set the seed in each of the cores you are using, which is not always straightforward and may require a bit of digging to find out how to do it if you have never done it. Testing your code on multiple systems and verifying that you can reproduce the same results (even on simulated data), is a good way to help ensure that you have set the seed correctly.
+
+**Update your draft.** It is almost impossible to have generated your data without encountering something that you did not foresee. If you did, now is the time to mention this in your draft and make any other necessary changes. Clearly indicate that these changes were made after observing the data.
+
+
+## Examples
+
+[Basu S, Berkowitz SA, Phillips RL, Bitton A, Landon BE, Phillips RS. Association of Primary Care Physician Supply With Population Mortality in the United States, 2005-2015. JAMA Intern Med. 2019;179(4):506–514. doi:10.1001/jamainternmed.2018.7624](https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2724393)
+
+This is a fantastic example in which all analyses and all findings were reported, not just the one and only that the authors believed was the best. Readers have the right to decide for themselves which analysis to believe in and differences between analyses reveal details about the data that would have otherwise been missed.
+
+[Goldstone AB, Chiu P, Baiocchi M, et al. Mechanical or Biologic Prostheses for Aortic-Valve and Mitral-Valve Replacement. New Engl J Med. 2017;377(19):1847-1857. doi:10.1056/nejmoa1613792](https://www.nejm.org/doi/full/10.1056/nejmoa1613792)
+
+This is a fantastic example where the authors used multiple methods to analyze their data and reported all of their analyses. The authors also went at great length in their supplementary materials to explain their analytic approach in detail, often creating accounts of methods that exceed in quality ones you would find in certain statistical textbooks!
+
+[Matthew Stephens, False discovery rates: a new deal, Biostatistics, Volume 18, Issue 2, April 2017, Pages 275–294. doi: 10.1093/biostatistics/kxw041](https://doi.org/10.1093/biostatistics/kxw041)
+
+This study was available on GitHub from the get-go, such that you could actually see in real time how the project was changing and what new analyses were being added. The GitHub now serves as a great example of how to organize your projects and can be accessed [here](https://github.com/stephens999/ash-orig).
+
+
+## Resources
+
+### General
+
+[Best of data science.](https://github.com/serghiou/best-of-data-science) This is a GitHub repository that I maintain and to which I add my favorite resources related to data science, from books, to packages, to tutorials. The most useful and most actively maintained list is that of [R material](https://github.com/serghiou/best-of-data-science/blob/master/best-of-r.md) and I am sure that you are bound to find most of what you need in order to practice data science in R like a pro (books on R and statistics, guides on data visualization, data summarization, Bayesian statistics, etc.) - if there’s something that you do not find, please let me know and I’ll add it! Note that if you are learning money to learn how to code in R and how to practice basic data science you are probably doing something wrong.
+
+[MiB Open Science support.](https://mibopenscience.github.io/) A great resource with details about various aspects of the transparent, rigorous and reproducible workflow. It contains a section on creating a statistical analysis plan (even though this may be going over the top).
+
+[Researcher Academy.](https://researcheracademy.elsevier.com/) An effort by ELSEVIER to provide free e-learning modules on research preparation, writing for research, the publication process, navigating peer review and communicating your research. Overall, even though it includes useful information, it certainly  falls short in describing how to practice more transparent, rigorous and reproducible research.
+
+
+### Statistical analysis plan
+
+[EQUATOR Network.](https://www.equator-network.org/) A comprehensive searchable database of reporting guidelines and relevant resources. At the time of writing, EQUATOR maintained an index of 432 reporting guidelines!
+
+[Principles and Guidelines for Reporting Pre-clinical Research by the NIH.](https://www.nih.gov/research-training/rigor-reproducibility/principles-guidelines-reporting-preclinical-research) A consensus guideline from editors of 30 basic/preclinical science journals. Even though not as explicit as the ARRIVE guidelines, it certainly mentions all important considerations of transparent and rigorous reporting.
