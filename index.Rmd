@@ -1,5 +1,5 @@
 ---
-title: 'Open, rigorous and reproducible research: A practiotioner''s guide'
+title: 'Open, rigorous and reproducible research: A practiotioner\'s handbook'
 author: "Dallas Card, Yan Min, Stylianos Serghiou"
 date: "`r Sys.Date()`"
 output:
