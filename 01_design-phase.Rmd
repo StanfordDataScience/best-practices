@@ -222,13 +222,14 @@ For now, let’s first go through the components of study design:
 
 **Note:** Sampling is totally art. The study design should also govern how the study units are sampled either directly via fieldwork, bench work, or from existing data sources.  We will lightly touch on this topic when introducing the types of study designs.
  
-- **Analytic Method** should also naturally stem from the kind of question you are asking. Moreover, a lot of times the execution protocol implies a proper set of analytical methods. You may “play around” with your data and get yourself familiarized. We all do that. However, once you decide to take it seriously, plan your analysis prior to generating any results. For example, if your study involves a hypothesis, you shall predetermine how many alternative hypotheses you would like to test. If you are doing a confirmatory study and would like to interpret the effect sizes of independent variables on the dependent variable, you may consider a method that can actually obtain the effect estimator, instead of using some non-parametric method or black-box method, where the effect sizes are not explicit. If you are asking a causal question, the analytical method should be able to fit into the causal inference framework. 
-💡Protip: Another great practice is that when you think through all the models picture the following figure, where the x-axis is the model complexity, the y-axis is the number of assumptions of the data the model makes. The fuzziness of the ball indicates the interpretability of the model. Most of the time, there is no perfect model to answer your question, you end up evaluating the tradeoffs among the available methods. This is where knowing your data comes quite handy.
+- **Analytic Method** should also naturally stem from the kind of question you are asking. Moreover, a lot of times the execution protocol implies a proper set of analytical methods. You may “play around” with your data and get yourself familiarized. We all do that. However, once you decide to take it seriously, plan your analysis prior to generating any results. For example, if your study involves a hypothesis, you shall predetermine how many alternative hypotheses you would like to test. If you are doing a confirmatory study and would like to interpret the effect sizes of independent variables on the dependent variable, you may consider a method that can actually obtain the effect estimator, instead of using some non-parametric method or black-box method, where the effect sizes are not explicit. If you are asking a causal question, the analytical method should be able to fit into the causal inference framework.
 
-  **Protip:** Another great practice is that when you think through all the models picture the following figure, where the x-axis is the model complexity, the y-axis is the number of assumptions of the data the model makes. The fuzziness of the ball indicates the interpretability of the model. Most of the time, there is no perfect model to answer your question, you end up evaluating the tradeoffs among the available methods. This is where knowing your data comes quite handy.
+_**Protip:** Another great practice is that when you think through all the models picture the following figure, where the x-axis is the model complexity, the y-axis is the number of assumptions of the data the model makes. The fuzziness of the ball indicates the interpretability of the model. Most of the time, there is no perfect model to answer your question, you end up evaluating the tradeoffs among the available methods. This is where knowing your data comes quite handy._
+
+_**Protip:** Another great practice is that when you think through all the models picture the following figure, where the x-axis is the model complexity, the y-axis is the number of assumptions of the data the model makes. The fuzziness of the ball indicates the interpretability of the model. Most of the time, there is no perfect model to answer your question, you end up evaluating the tradeoffs among the available methods. This is where knowing your data comes quite handy._
 
 
-```{r centuries, echo=FALSE, fig.cap="Figure credit: Yan Min", out.width = '100%'}
+```{r model-comlexity, echo=FALSE, fig.cap="Figure credit: Yan Min", out.width = '100%'}
 
 knitr::include_graphics("images/phase-1_model-complexity.png")
 ```
@@ -386,6 +387,7 @@ Although power analysis is most commonly used in human subjects experiments, it 
 ### Need a Pilot?
 
 <!-- [add quote here] -->
+
 
 #### What is a Pilot Study?
 
