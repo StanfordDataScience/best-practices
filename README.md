@@ -15,7 +15,13 @@ We are very interested in any contributions! If you spot any typos or errors, or
 
 Please cite this work as follows (for BibTeX):
 
-@book{OpenRigorousReproducibleScience, author = {Yan Min, Dallas Card, Stylianos Serghiou}, title = {Open, rigorous and reproducible research: A practiotioner's handbook}, year = 2021, url = {https://github.com/serghiou/scientific-method-handbook}, publisher = {Self-published} }
+@book{OpenRigorousReproducibleScience, 
+  author = {Yan Min, Dallas Card, Stylianos Serghiou}, 
+  title = {Open, rigorous and reproducible research: A practiotioner's handbook}, 
+  year = 2021,
+  url = {https://github.com/serghiou/scientific-method-handbook}, 
+  publisher = {Self-published} 
+ }
 
 
 ## License
