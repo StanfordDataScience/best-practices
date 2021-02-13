@@ -2,6 +2,8 @@
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
+<div align=justify>
+
 ## FAQs
 
 ### How do I contribute?
@@ -15,5 +17,5 @@ Please cite this work as follows (for BibTeX):
 
 @book{OpenRigorousReproducibleScience, author = {Yan Min, Dallas Card, Stylianos Serghiou}, title = {Open, rigorous and reproducible research: A practiotioner's handbook}, year = 2021, url = {https://github.com/serghiou/scientific-method-handbook}, publisher = {Self-published} }
 
-
+</div>
 
