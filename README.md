@@ -11,9 +11,9 @@
 We are very interested in any contributions! If you spot any typos or errors, or have in mind very good figures, examples or advice that was not included in this handbook, please let us know! To do that, you can submit an "Issue" in this GitHub repo [here](https://github.com/serghiou/scientific-method-handbook/issues). Thanks!
 
 
-### How do I cite this handbook?
+### How do I cite this book?
 
-Please cite this work as follows (for BibTeX):
+Please cite this book as follows (for BibTeX):
 
 @book{OpenRigorousReproducibleScience, 
   author = {Yan Min, Dallas Card, Stylianos Serghiou}, 
