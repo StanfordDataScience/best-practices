@@ -1,6 +1,8 @@
 # Open, rigorous and reproducible research: A practiotioner's handbook
 
-Shield: [![CC BY 4.0][cc-by-shield]][cc-nc]
+Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
+
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
 This work is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].
