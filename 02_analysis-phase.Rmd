@@ -12,11 +12,12 @@ This portion of the manual offers practical guidance and warns against common pi
 ## Start here
 
 _“If you have built castles in the air, your work need not be lost; that is where they should be. Now put the foundations under them.”_
+
 _Henry David Thoreau_
 
 **Read this manual BEFORE you begin your study.** You need to know what data you should be gathering and what analyses you should be reporting before you even begin your study. This is because there are analyses that you should produce before you even begin (e.g. power analysis) and data that you should be gathering from the get go (e.g. confounding variables used by other teams) that you may not even think of gathering in advance.
 
-**Recognize and avoid cognitive biases.** It is important to recognize that we are all subject to [cognitive biases](https://en.wikipedia.org/wiki/List_of_cognitive_biases) and take steps to mitigate them before you even begin. [Confirmation bias](https://en.wikipedia.org/wiki/Confirmation_bias#Science_and_scientific_research) is the tendency to generate, analyze and interpret data designed to confirm rather than challenge your hypotheses. Examples of this in science may include running experiments that you know are more likely to confirm rather than dispute your hypotheses, or avoiding tests that may cast a doubt on the robustness of your findings. Try out [this](https://www.nytimes.com/interactive/2015/07/03/upshot/a-quick-puzzle-to-test-your-problem-solving.html) fun problem by New York Times for a demonstration of confirmation bias. [Overconfidence bias](https://en.wikipedia.org/wiki/Overconfidence_effect) is the tendency to place more confidence in your judgement or ability than is due. Examples of this in science may include attribution of failed replications to someone else’s inferior skill or attribution of unexpectedly positive results to your superior skill. Try out [this](http://messymatters.com/calibration/) fun test of your ability to assess subjective probability (overconfidence bias arises from a miscalibration of subjective probability). There are [many other relevant biases](https://en.wikipedia.org/wiki/Cognitive_bias), such as availability bias, anchoring bias or affinity bias.
+**Recognize and avoid cognitive biases.** It is important to recognize that we are all subject to [cognitive biases](https://en.wikipedia.org/wiki/List_of_cognitive_biases) and take steps to mitigate them before you even begin. [Confirmation bias](https://en.wikipedia.org/wiki/Confirmation_bias#Science_and_scientific_research) is the tendency to generate, analyze and interpret data designed to confirm rather than challenge your hypotheses. Examples of this in science may include running experiments that you know are more likely to confirm rather than dispute your hypotheses, or avoiding tests that may cast a doubt on the robustness of your findings. Try out [this](https://www.nytimes.com/interactive/2015/07/03/upshot/a-quick-puzzle-to-test-your-problem-solving.html) fun problem by New York Times for a demonstration of confirmation bias. [Overconfidence bias](https://en.wikipedia.org/wiki/Overconfidence_effect) is the tendency to place more confidence in your judgment or ability than is due. Examples of this in science may include attribution of failed replications to someone else’s inferior skill or attribution of unexpectedly positive results to your superior skill. Try out [this](http://messymatters.com/calibration/) fun test of your ability to assess subjective probability (overconfidence bias arises from a miscalibration of subjective probability). There are [many other relevant biases](https://en.wikipedia.org/wiki/Cognitive_bias), such as availability bias, anchoring bias or affinity bias. Think what steps you can take to mitigate the impact of these biases before you begin. Some of the strategies detailed in this chapter (e.g. creating a protocol) represent our approach to do just that.
 
 _**Pro tip:** We often find ourselves being overconfident in our analyses and not running that extra “pointless” check or test. We must say that we have never, ever, ran that extra test without obtaining insightful results that more often than not challenge the confidence we had initially placed in our analyses._
 
@@ -24,6 +25,7 @@ _**Pro tip:** We often find ourselves being overconfident in our analyses and no
 ## Statistical Analysis Plan (SAP)
 
 _“To consult the statistician after an experiment is finished is often merely to ask him to conduct a post mortem examination. He can perhaps say what the experiment died of.”_
+
 _Ronald Fisher_
 
 **Collaborate with a statistician.** Yes, the time to speak with a statistician is BEFORE you even begin your study, not after! You can request free statistical consulting at Stanford here, no matter what research you do. By collaborating with a statistician, you are not only improving the quality of your analyses, but you are also learning from the experts. Collaborating with a statistician is a strength, not a weakness.
@@ -60,6 +62,7 @@ _**Pro tip:**  We always begin our write up before we even start working on a st
 ## Data generation
 
 _“No amount of experimentation can prove me right; a single experiment can prove me wrong.”_
+
 _Albert Einstein_
 
 **If possible, run a pilot.** It is very common to realize shortcomings in your protocol as soon as you start gathering data. A small pilot study is often a great way to avoid changing your protocol after study initiation and pretending that this was the protocol all along. If you do absolutely need to change your protocol, indicate what changes were made post hoc because such decisions are likely data-dependent. Again, there is nothing wrong in being clear about post hoc decisions and nothing wrong about reporting failed experiments; however, much is wrong with not reporting data-dependent changes or initial failed experiments and these may even amount to scientific misconduct.
@@ -124,6 +127,7 @@ _**Pro tip:**  If you decide to impute, always report results from the imputed a
 ## Data visualization
 
 _“The greatest value of a picture is when it forces us to notice what we never expected to see.”_
+
 _John Tukey_
 
 **Always visualize your data.** Countless errors have been caught by this simple step, to visualize your data using a simple histogram, box plot and scatter plot (the figure below is known as Anscombe's quartet and shows four scatter plots of very different distributions but identical correlation). In R, you can do this for the whole dataset using a single command (“ggally::ggpairs” - note that if using this command, you may want to prioritize visualizing the top 10-15 most interesting variables for clarity). You can upload these visualizations as a supplement to offer a feel of your data to readers with no access to your data. 
@@ -147,6 +151,7 @@ _**Pro tip:**  Remember what we said earlier about random numbers creeping up on
 ## Data summarization
 
 _“The first principle is not to fool yourself, and you are the easiest person to fool.”_
+
 _Richard Feynman_
 
 **Produce summary statistics for all of your data.** Always summarize your data for the reader (e.g. produce means, standard deviation, medians, interquartile ranges, etc.). This is standard in some fields (e.g. medicine), but not others (e.g. computer science). Even in fields in which it is standard, most will only produce summary statistics of just a few variables. However, in R, with a single line of code you can summarize all of your data using the packages [skimr](https://cran.r-project.org/web/packages/skimr/vignettes/skimr.html) or [summarytools](https://cran.r-project.org/web/packages/summarytools/vignettes/Introduction.html) (preferred) - both even produce a histogram for each variable as well. You can then submit the output of the summarytools package as a separate file to be published alongside your article. We cannot stress enough that nowadays, using computers, ANY form of data output can be made available and we should apply no restrictions, given how easy it is to produce such summaries.
@@ -158,6 +163,7 @@ _Richard Feynman_
 
 ## Data analysis
 _“All models are wrong, but some are useful.”_
+
 _George Box_
 
 **Decide whether you plan to describe, predict or estimate.** This is arguably the most important data analytic decision you need to make, it should be made at the outset and it should be clearly communicated. [Miguel Hernan and colleagues](https://amstat.tandfonline.com/doi/full/10.1080/09332480.2019.1579578#.XznXEC2z2CM) recently proposed that most analytic tasks can be classified into description, prediction or counterfactual prediction (or, estimation). Description is “using data to provide a quantitative summary of certain features of the world. Descriptive tasks include, for example, computing the proportion of individuals with diabetes in a large healthcare database and representing social networks in a community.” “Prediction is using data to map some features of the world (the inputs) to other features of the world (the outputs). Prediction often starts with simple tasks (quantifying the association between albumin levels at admission and death within one week among patients in the intensive care unit) and then progresses to more complex ones (using hundreds of variables measured at admission to predict which patients are more likely to die within one week).” “Counterfactual prediction is using data to predict certain features of the world as if the world had been different, which is required in causal inference applications. An example of causal inference is the estimation of the mortality rate that would have been observed if all individuals in a study population had received screening for colorectal cancer vs. if they had not received screening.” This distinction is very important because these three tasks require fundamentally different approaches, even if you are using the same statistical machinery. For example, when using linear regression, in description you would be interested in fitting to the data at hand, in prediction you are interested in fitting to future unobserved data and in counterfactual prediction you are estimated in fitting to an unobserved world. In biology, most labs are interested in counterfactual prediction (where the control is the counterfactual). In medicine, most teams are also interested in counterfactual prediction, but in fact are publishing descriptions or predictions.
@@ -200,6 +206,7 @@ _**Pro tip:**  We are so frustrated by this problem that we vouch to pay $50 to 
 
 ## Statistical analysis report
 _“We have the duty of formulating, of summarizing, and of communicating our conclusion, in intelligible form, in recognition of the right of other free minds to utilize them in making their own decisions.”_
+
 _Ronald Fisher_
 
 **Report EVERYTHING - leave no man behind!** Good reporting is not only about how to report, but also what you choose to report. And the answer to what you should report is always EVERYTHING! Up to say 30 years ago, it could make sense to select what you choose to report because scientific communication occurred predominantly via limited printed text. This is not necessary anymore. You can include Supplementary Information of as many pages as you want, submit to journals with no word limits (e.g. PLOS Biology) or submit to journals that do not prioritize novel findings (e.g. eLife, PLOS One). You can even avoid the peer-reviewed literature altogether and submit as a preprint (e.g. bioRxiv) or simply as a Medium article. If an experiment is not worth reporting it should not have been done in the first place - if it was worth even contemplating doing, it is worth being reported. Not reporting it is either a form of data dredging, misuse of taxpayer money, or both. Imagine the poor PhD student spending months of their time and taxpayer money working on an experiment that you could have already told them is a dead end.
