@@ -1,7 +1,8 @@
 ---
-title: 'Open, rigorous and reproducible research: A practiotioner\'s handbook'
+title: "Open, rigorous and reproducible research: A practiotioner's handbook"
 author: "Dallas Card, Yan Min, Stylianos Serghiou"
 date: "`r Sys.Date()`"
+# more output formats: https://bookdown.org/yihui/bookdown/output-formats.html
 output:
   bookdown::gitbook:
     config:
@@ -12,7 +13,7 @@ output:
         theme: white
         family: serif
         size: 2
-    split_by: section+number
+    split_by: section  # section+number
     highlight: tango
     includes: null
   bookdown::pdf_book:
@@ -117,3 +118,8 @@ We break this guide down into three mains sections. Each section contains many m
 
 
 In addition, appendices cover additional resources, such as frequently asked questions, discipline-specific considerations and linked to additional resources (of which  there are plenty!)
+
+
+## Acknowledgements
+
+We would like to thank all early readers of this work, who's feedback we sincerely appreciate. We are especially thankful to the Stanford Data Science Initiative community, Russ Poldrack, John Chambers and Steve Goodman.
