@@ -13,7 +13,7 @@ output:
         theme: white
         family: serif
         size: 2
-    split_by: section  # section+number
+    split_by: chapter  # section OR section+number
     highlight: tango
     includes: null
   bookdown::pdf_book:
@@ -118,6 +118,17 @@ We break this guide down into three mains sections. Each section contains many m
 
 
 In addition, appendices cover additional resources, such as frequently asked questions, discipline-specific considerations and linked to additional resources (of which  there are plenty!)
+
+
+## Authors
+
+<!-- Can we add a fun fact about each one of us? Also, can we add our pictures? -->
+
+**Dallas Card** is a postdoctoral researcher working with Dan Jurafsky and Daniel McFarland as part of the Stanford NLP Group and the Stanford Data Science Institute. I received my Ph.D. from the Machine Learning Department at Carnegie Mellon University, where I was advised by Noah Smith.
+
+**Yan Min** is a Ph.D. candidate working with Mike Baiocchi as part of the Department of Epidemiology and Population Health at Stanford University. She has previously completed her medical studies in China.
+
+**Stylianos (Stelios) Serghiou** is an AI Resident at Google Health working on using modern methods of data science to empower patients, doctors and clinical researchers. He received his Ph.D. in Epidemiology and Clinical Research and Masters in Statistics from Stanford University, where he was advised by John Ioannidis. He previously completed his medical training at the University of Edinburgh, UK.
 
 
 ## Acknowledgements
