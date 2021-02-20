@@ -1,5 +1,12 @@
+_book/
+_bookdown_files/
+libs/
+**/*.bib
+**/*.html
+!**/mathjax_header.html
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
 .DS_Store
+
