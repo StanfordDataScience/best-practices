@@ -1,7 +1,7 @@
 on:
   push:
      branches:
-       - master
+       - main
 
   
 
@@ -33,7 +33,7 @@ jobs:
    needs: bookdown
    steps:
      - name: Checkout
-       uses: actions/checkout@master
+       uses: actions/checkout@main
      - name: Download artifact
        uses: actions/download-artifact@v1.0.0
        with:
@@ -42,7 +42,7 @@ jobs:
          # Destination path
          path: _book # optional
      - name: Deploy to GitHub Pages
-       uses: Cecilapp/GitHub-Pages-deploy@master
+       uses: Cecilapp/GitHub-Pages-deploy@main
        env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
        with:
