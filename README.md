@@ -17,7 +17,7 @@ Please cite this book as follows (for BibTeX):
 
 ```
 @book{OpenRigorousReproducibleScience, 
-  author = {Dallas Card, Yan Man, Stylianos Serghiou}, 
+  author = {Dallas Card, Yan Min, Stylianos Serghiou}, 
   title = {Open, rigorous and reproducible research: A practiotioner's handbook}, 
   year = 2021,
   url = {https://stanforddatascience.github.io/best-practices/}, 
