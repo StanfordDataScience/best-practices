@@ -124,7 +124,7 @@ In addition, appendices cover additional resources, such as frequently asked que
 
 <!-- Can we add a fun fact about each one of us? Also, can we add our pictures? -->
 
-**Dallas Card** is a postdoctoral researcher working with Dan Jurafsky and Daniel McFarland as part of the Stanford NLP Group and the Stanford Data Science Institute. I received my Ph.D. from the Machine Learning Department at Carnegie Mellon University, where I was advised by Noah Smith.
+**Dallas Card** is a postdoctoral scholar with the Stanford NLP Group and the Stanford Data Science Institute. He received his Ph.D. from the Machine Learning Department at Carnegie Mellon University.
 
 **Yan Min** is a Ph.D. candidate working with Mike Baiocchi as part of the Department of Epidemiology and Population Health at Stanford University. She has previously completed her medical studies in China.
 
