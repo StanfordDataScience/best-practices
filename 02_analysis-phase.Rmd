@@ -103,7 +103,7 @@ _**Pro tip:** Have a look at the Publication phase for more details on how to or
 
 (e) Make sure that you save your analytic dataset in a format that anyone can access (e.g. CSV, JSON, XML). Do not save as .xlsx because not everyone uses Microsoft Excel.
 
-**The DONTs of analytic datasets.**T hings you should never do: 
+**The DONTs of analytic datasets.** Things you should never do: 
 
 (a) Never remove outliers at this stage. If you do want to remove outliers, which is rarely recommended, only do this while analyzing the data.
 
@@ -111,15 +111,18 @@ _**Pro tip:** Have a look at the Publication phase for more details on how to or
 
 (c) Never edit data by hand in Excel as it is impossible for others to replicate this process (if you really want to do so, even though you should not, create a detailed guide of what steps someone should follow to convert the raw data into your analytic data in Excel). Also be careful when it comes to dates and times, as these are sometimes handled differently by different systems. As a safety measure, it may be worth saving the essential components of the data in separate columns (e.g., adding additional columns for year, month, and day, if that is the level of granularity at which the data were acquired).
 
-_**Pro tip:** A good convention is to keep column names lower-case and separate words by "\\_" (e.g. medical_history). You can also use the following prefixes to name columns in ways that reflect their data type: (a) “is_” denotes a binary variable with entries as Yes/No or TRUE/FALSE (e.g. is_old), (b) “num\\_” denotes a continuous variable (e.g. num_age) and “ n\\_” denotes counts (e.g. n_years)._
+_**Pro tip:** A good convention is to keep column names lower-case and separate words by "_" (e.g. medical_history). You can also use the following prefixes to name columns in ways that reflect their data type: (a) "is_" denotes a binary variable with entries as Yes/No or TRUE/FALSE (e.g. "is_old" could denote patients older than 80 years), (b) "num\_" denotes a continuous variable (e.g. "num_age" could denote the age) and "n\_" denotes counts (e.g. "n_years" could denote number of years). Finally, consider using the unit of measurement within the column name when this is ambiguous; for example, "years_since_onset" is preferable to "time_since_onset" because the former clarifies that the column is in "years" and obviates confusion or the need to check the data dictionary._
 
 _**Pro tip:** The better the column names, the less often a reader should need to consult the data dictionary. Even though often inevitable, we consider it a failure when someone cannot deduce the contents of a column simply by reading the study and the name of the column._
+
 
 **Dealing with missing data.** This is complicated, there is no satisfying answer and many pages have been written about it (probably because there is no satisfying answer). However, there is a very clear answer to what you shouldn’t do, and this is that you should NEVER pretend that there was no missingness! Whether you decide to do something about the missingness or not (e.g. imputation, sensitivity analyses, etc.), ALWAYS indicate how many observations from what variables were missing. In terms of what to do about it, a rough rule of thumb is to leave it as is if < 5% of observations are affected, otherwise use multiple imputation: Figure 1 of [this](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-017-0442-1) guide is a great summary.
 
 _**Pro tip:**  If you decide to impute, always report results from the imputed and the original dataset. Again, there may be a problem in reporting too little, there is rarely a problem with reporting too much._
 
+
 **NEVER throw away data.** Do not crop away data from images or Western blots. Do not get rid of observations with inconvenient measurements. These are analytic choices that should be taken during data analysis - see further details in Data analysis.
+
 
 **Update your draft.** It is almost impossible to have not encountered something that you did not foresee. If you did, now is the time to mention this in your draft and make any other necessary changes. Clearly indicate that these changes were made after observing the data.
 
