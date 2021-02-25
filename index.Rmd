@@ -1,5 +1,5 @@
 ---
-title: "Open, rigorous and reproducible research: A practioner's handbook"
+title: "Open, rigorous and reproducible research: A practitioner's handbook"
 author: "Dallas Card, Yan Min, Stylianos Serghiou"
 date: "`r Sys.Date()`"
 # more output formats: https://bookdown.org/yihui/bookdown/output-formats.html
