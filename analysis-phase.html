@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2 Analysis phase | Open, rigorous and reproducible research: A practitioner’s handbook</title>
   <meta name="description" content="Even though many scientists are expected to abide by the principles of open, rigorous and reproducible research, few scientists actually receive formal training in this. Indeed, there is no collection written by workings scientis for working scientists about the principles of open, rigorous and transparent research and how to go about practicing such research, beyond theory. This handbook represents a constantly updated guide aiming to fulfil this gap and by doing so actively assist all researchers in producing informative research." />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2 Analysis phase | Open, rigorous and reproducible research: A practitioner’s handbook" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Dallas Card, Yan Min, Stylianos Serghiou" />
 
 
-<meta name="date" content="2021-06-11" />
+<meta name="date" content="2021-12-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,8 @@
   
 <link rel="prev" href="study-design-phase.html"/>
 <link rel="next" href="publication-phase.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -41,7 +42,6 @@
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -298,7 +298,7 @@
 <p><em><strong>Pro tip:</strong> If you are in biology, please stop making your best picture available in your papers. Instead, show a picture where the effect is very clear and contrast it with a picture in which the effect is very unclear. Additionally, make ALL pictures available on an online platform (see Data sharing for more details). As above, we pledge $50 to the first person to send us a newly published paper in which they have abided by these principles.</em></p>
 <p><strong>Never choose what to report on the basis of the p-value you p-hacker.</strong> Known as data dredging, data fishing, data snooping or p-hacking, this is the practice of engineering more confidence in the reported p-value than it is due. Say for example you do an experiment 20 times, you get 19 p-values above 0.05 and one below 0.05. Simply reporting the one “successful” experiment and not reporting the 19 “unsuccessful” experiments is a form of p-hacking because you are falsely inflating the perceived chance that your result is a true positive - had we known that this was only 1/20 experiments, we would likely consider this is a false discovery (i.e. a false positive). <a href="https://fivethirtyeight.com/features/science-isnt-broken/">Here</a> is a fantastic article by FiveThirtyEight should you want to test your ability in engineering a low p-value. The p-value should never determine whether a result is reported or not. And <a href="https://www.tylervigen.com/spurious-correlations">here</a> is a website to caution you against spurious associations - just because they are correlated, it does not mean that they are causally related.</p>
 <p><em><strong>Pro tip:</strong> We avoid p-hacking by using a trick suggested by Tukey. We always develop our analytic plan using a massively subsampled version of our data, say using 100 out of 5000 observations. By subsampling our data to the extent that getting a low p-value is almost impossible, we avoid making decisions on the basis of the p-value. When all of our analyses are done, we then switch to using all of our observations, to obtain the results that we will report in the study. Another version of this is known as “honest estimation”: you split your sample in two, develop your model in the first half (i.e. decide what variables to include) and fit it in the second half - to avoid throwing away data, you can do it again in the opposite direction (develop in the second half and fit in the first half) and take the mean of the two models.</em></p>
-<div class="figure"><span id="fig:centuries"></span>
+<div class="figure"><span style="display:block;" id="fig:centuries"></span>
 <img src="images/phase-2_19-vs-21-century.png" alt="Figure credit: https://en.wikipedia.org/wiki/Anscombe%27s_quartet" width="100%" />
 <p class="caption">
 Figure 2.1: Figure credit: <a href="https://en.wikipedia.org/wiki/Anscombe%27s_quartet" class="uri">https://en.wikipedia.org/wiki/Anscombe%27s_quartet</a>
@@ -364,7 +364,6 @@ Figure 2.1: Figure credit: <a href="https://en.wikipedia.org/wiki/Anscombe%27s_q
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -404,6 +403,10 @@ gitbook.start({
 "text": null
 },
 "download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection",
 "scroll_highlight": true

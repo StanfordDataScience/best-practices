@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>1 Study design phase | Open, rigorous and reproducible research: A practitioner’s handbook</title>
   <meta name="description" content="Even though many scientists are expected to abide by the principles of open, rigorous and reproducible research, few scientists actually receive formal training in this. Indeed, there is no collection written by workings scientis for working scientists about the principles of open, rigorous and transparent research and how to go about practicing such research, beyond theory. This handbook represents a constantly updated guide aiming to fulfil this gap and by doing so actively assist all researchers in producing informative research." />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="1 Study design phase | Open, rigorous and reproducible research: A practitioner’s handbook" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Dallas Card, Yan Min, Stylianos Serghiou" />
 
 
-<meta name="date" content="2021-06-11" />
+<meta name="date" content="2021-12-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,8 @@
   
 <link rel="prev" href="index.html"/>
 <link rel="next" href="analysis-phase.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -41,7 +42,6 @@
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -203,7 +203,7 @@
 <!-- - … --></li>
 </ul>
 <p><strong>Note:</strong> Since academic fields vary, it does not mean that your question has to fulfill all these points mentioned above. However, we do encourage you to go through these questions while you are contemplating the research question.</p>
-<div class="figure"><span id="fig:pressure"></span>
+<div class="figure"><span style="display:block;" id="fig:pressure"></span>
 <img src="images/phase-1_quality-of-question.png" alt="Figure credit: https://simplystatistics.org/2019/04/17/tukey-design-thinking-and-better-questions/" width="100%" />
 <p class="caption">
 Figure 1.1: Figure credit: <a href="https://simplystatistics.org/2019/04/17/tukey-design-thinking-and-better-questions/" class="uri">https://simplystatistics.org/2019/04/17/tukey-design-thinking-and-better-questions/</a>
@@ -367,7 +367,7 @@ Are there any underlying data structures that we should be aware of? (Correlated
 </ul>
 <p><em><strong>Protip:</strong> Another great practice is that when you think through all the models picture the following figure, where the x-axis is the model complexity, the y-axis is the number of assumptions of the data the model makes. The fuzziness of the ball indicates the interpretability of the model. Most of the time, there is no perfect model to answer your question, you end up evaluating the tradeoffs among the available methods. This is where knowing your data comes quite handy.</em></p>
 <p><em><strong>Protip:</strong> Another great practice is that when you think through all the models picture the following figure, where the x-axis is the model complexity, the y-axis is the number of assumptions of the data the model makes. The fuzziness of the ball indicates the interpretability of the model. Most of the time, there is no perfect model to answer your question, you end up evaluating the tradeoffs among the available methods. This is where knowing your data comes quite handy.</em></p>
-<div class="figure"><span id="fig:model-comlexity"></span>
+<div class="figure"><span style="display:block;" id="fig:model-comlexity"></span>
 <img src="images/phase-1_model-complexity.png" alt="Figure credit: Yan Min" width="100%" />
 <p class="caption">
 Figure 1.2: Figure credit: Yan Min
@@ -393,7 +393,7 @@ Figure 1.2: Figure credit: Yan Min
 <div id="types-of-errors" class="section level3">
 <h3><span class="header-section-number">1.4.1</span> Types of Errors</h3>
 <p>Generally speaking, there are three types of errors, namely <strong>random error</strong>, <strong>systematic error</strong>, and <strong>blunders</strong>. The following diagram indicates the classification of errors.</p>
-<div class="figure"><span id="fig:type-of-error"></span>
+<div class="figure"><span style="display:block;" id="fig:type-of-error"></span>
 <img src="images/phase-1_types-of-error.png" alt="Figure credit: Yan Min" width="100%" />
 <p class="caption">
 Figure 1.3: Figure credit: Yan Min
@@ -420,7 +420,7 @@ Figure 1.3: Figure credit: Yan Min
 <li><p><strong>Validity</strong> concerns how close the estimate is to the true effect size. Validity includes internal validity and external validity. The latter is also called generalizability. The internal validity evaluates whether the estimate is close to the true effect size of the study subjects, and it is often affected by systematic errors. The external validity concerns whether the estimate is true, such that the estimate from the current study is close to the true effect sizes in other subjects that are not included in the current study. For an excellent discussion of validity in relation to measurement and fairness, please refer to <a href="https://arxiv.org/abs/1912.05511">this</a> paper by Jacobs and Wallach.</p></li>
 </ul>
 <p>As shown in the following figure, the random error alone usually affects the study precision, systematic error affects the study validity. For example, a noisy measurement of the key exposure variable, as a random error by definition, will result in way less concrete inference of the exposure, in some cases, it can be expressed as wide confidence intervals. Whereas, only selecting healthy participants to test out COVID-19 vaccine, as a systematic error, will potentially produce a false conclusion that the vaccine is effective. However, the direction and magnitude of the bias caused by systematic error must be discussed based on the study specific conditions. When both random error and systematic error occur in one study. The results could be quite questionable… But you don’t want to wait till you see this happens in your study. Therefore, <strong>based on what you know about the source of data and your study design, you shall try to anticipate the potential errors that you may encounter.</strong> Hence, address such concerns in the design phase to reduce the chance of having such anticipated errors.</p>
-<div class="figure"><span id="fig:precision-validity"></span>
+<div class="figure"><span style="display:block;" id="fig:precision-validity"></span>
 <img src="images/phase-1_validity-precision.png" alt="Figure credit: Yan Min" width="100%" />
 <p class="caption">
 Figure 1.4: Figure credit: Yan Min
@@ -572,7 +572,6 @@ Figure 1.4: Figure credit: Yan Min
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -612,6 +611,10 @@ gitbook.start({
 "text": null
 },
 "download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection",
 "scroll_highlight": true
