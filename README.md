@@ -3,6 +3,8 @@
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
 <div align='justify'>
+  
+Read our handbook [here](https://stanforddatascience.github.io/best-practices/)!
 
 ## FAQs
 
@@ -17,7 +19,7 @@ Please cite this book as follows (for BibTeX):
 
 ```
 @book{OpenRigorousReproducibleScience, 
-  author = {Dallas Card, Yan Man, Stylianos Serghiou}, 
+  author = {Dallas Card, Yan Min, Stylianos Serghiou}, 
   title = {Open, rigorous and reproducible research: A practiotioner's handbook}, 
   year = 2021,
   url = {https://stanforddatascience.github.io/best-practices/}, 
