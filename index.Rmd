@@ -53,7 +53,7 @@ tags:
 
 This book starts from the premise that there is a lot we can all do to increase the benefits of research. 
 
-To begin, let's consider the main limitations with research that is not carried out and shared in an open, transparent, and reproducible way:
+Let's consider the main limitations of research that is **not** carried out and shared in an open, transparent, and reproducible way:
 
 - If papers are published in venues that are only available to those who pay for access, the vast majority of the world will not be able to see the output of all the work that went into producing it; this limits the potential reach and benefit to others.
 
