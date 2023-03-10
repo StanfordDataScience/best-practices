@@ -34,10 +34,10 @@ link-citations: yes
 github-repo: serghiou/scientific-method-handbook
 description: Even though many scientists are expected to abide by the principles of
   open, rigorous and reproducible research, few scientists actually receive formal
-  training in this. Indeed, there is no collection written by workings scientis for
-  working scientists about the principles of open, rigorous and transparent research
-  and how to go about practicing such research, beyond theory. This handbook represents
-  a constantly updated guide aiming to fulfil this gap and by doing so actively assist
+  training in this. Indeed, there is no collection written by working scientists for
+  working scientists about the principles of transparent, rigorous and reproducible research
+  and how to go about _practicing_ such research. This handbook represents
+  a constantly updated guide aiming to fill this gap and by doing so actively assist
   all researchers in producing informative research.
 url: https\://www.github.com/serghiou/scientific-method-handbook
 tags:
