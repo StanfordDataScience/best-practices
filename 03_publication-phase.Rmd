@@ -241,4 +241,4 @@ It is likely impossible to entirely document and/or recreate all of your decisio
 
 - [The Turing Way](https://the-turing-way.netlify.app/welcome): An excellent community-driven guie to reproducible data science.
 - [The Center for Open Science](https://www.cos.io/): A central organization devoted to open and reproducible research.
-- [The Open Source Initiative](https://opensource.org/): Working to raise awareness and adoption of open source software.
+- [The Open Source Initiative](https://opensource.org/): A group working to raise awareness and adoption of open source software.
