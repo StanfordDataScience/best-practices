@@ -6,7 +6,7 @@
   
 Read our handbook [here](https://stanforddatascience.github.io/best-practices/)!
 
-## FAQs
+## FAQ
 
 ### How do I contribute?
 
