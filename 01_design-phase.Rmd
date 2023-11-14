@@ -226,8 +226,6 @@ For now, let’s first go through the components of study design:
 
 _**Protip:** Another great practice is that when you think through all the models picture the following figure, where the x-axis is the model complexity, the y-axis is the number of assumptions of the data the model makes. The fuzziness of the ball indicates the interpretability of the model. Most of the time, there is no perfect model to answer your question, you end up evaluating the tradeoffs among the available methods. This is where knowing your data comes quite handy._
 
-_**Protip:** Another great practice is that when you think through all the models picture the following figure, where the x-axis is the model complexity, the y-axis is the number of assumptions of the data the model makes. The fuzziness of the ball indicates the interpretability of the model. Most of the time, there is no perfect model to answer your question, you end up evaluating the tradeoffs among the available methods. This is where knowing your data comes quite handy._
-
 
 ```{r model-comlexity, echo=FALSE, fig.cap="Figure credit: Yan Min", out.width = '100%'}
 
