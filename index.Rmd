@@ -124,11 +124,12 @@ In addition, appendices cover additional resources, such as frequently asked que
 
 <!-- Can we add a fun fact about each one of us? Also, can we add our pictures? -->
 
-**Dallas Card** is a postdoctoral scholar with the Stanford NLP Group and the Stanford Data Science Institute. He received his Ph.D. from the Machine Learning Department at Carnegie Mellon University.
+**Dallas Card, Ph.D.** is an assistant professor in the School of Information at the University of Michigan. Before that, he was a postdoctoral researcher in the Stanford NLP Group and the Stanford Data Science Institute. He received my Ph.D. from the Machine Learning Department at Carnegie Mellon University, where he was advised by Noah Smith.
 
-**Yan Min** is a Ph.D. candidate working with Mike Baiocchi as part of the Department of Epidemiology and Population Health at Stanford University. She has previously completed her medical studies in China.
 
-**Stylianos (Stelios) Serghiou** is an AI Resident at Google Health working on using modern methods of data science to empower patients, doctors and clinical researchers. He received his Ph.D. in Epidemiology and Clinical Research and Masters in Statistics from Stanford University, where he was advised by John Ioannidis. He previously completed his medical training at the University of Edinburgh, UK.
+**Yan (Mia) Min, M.D., Ph.D.** is a post-doctoral fellow at the Department of Cardiothoracic Surgery, Stanford School of Medicine, where she takes on a leadership roll of the quantitative research in the Department. She received her Ph.D. in Epidemiology and Computer Science, Master's in Statistics from Stanford University. She also obtained her M.D. with a residency in General Surgery.
+
+**Stylianos (Stelios) Serghiou, M.D., Ph.D.** is the Head of Data Science at Prolaio. Before that he was an AI Resident at Google Health working on using modern methods of data science to empower patients, doctors and clinical researchers. He received his Ph.D. in Epidemiology and Clinical Research and Masters in Statistics from Stanford University, where he was advised by John Ioannidis. He previously completed his medical training at the University of Edinburgh, UK.
 
 
 ## Acknowledgements
