@@ -41,7 +41,7 @@ jobs:
        uses: actions/download-artifact@v4
        with:
          # Artifact name
-         name: book_site # optional
+         name: _book # optional
          # Destination path
          path: _book # optional
      - name: Deploy to GitHub Pages
