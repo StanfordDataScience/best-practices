@@ -12,14 +12,14 @@ jobs:
     name: Render-Book
     runs-on: macOS-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: r-lib/actions/setup-r@v1
-      - uses: r-lib/actions/setup-pandoc@v1
+      - uses: actions/checkout@v4
+      - uses: r-lib/actions/setup-r@v4
+      - uses: r-lib/actions/setup-pandoc@v4
       - name: Install rmarkdown
         run: Rscript -e 'install.packages(c("rmarkdown","bookdown","readr"))'
       - name: Render Book
         run: Rscript -e 'bookdown::render_book("index.Rmd")'
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v4
         with:
           name: _book
           path: _book/
