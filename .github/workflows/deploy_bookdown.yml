@@ -53,7 +53,7 @@ jobs:
           user_name: "github-actions[bot]"
           user_email: yanmin@stanford.edu            # must be a verified email
           build_dir: _book/                     # "_site/" by default
-          branch: gh-pages
-
+          branch: gh-pages 
+ 
  
 
