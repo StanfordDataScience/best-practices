@@ -33,20 +33,25 @@ jobs:
    needs: bookdown
    steps:
      - name: Checkout
-       uses: actions/checkout@main
+       uses: actions/checkout@v4
+       with: 
+          fetch-depth: 0 # fetch full history
+          persist-credentials: true # so GITHUB_TOKEN is available
      - name: Download artifact
        uses: actions/download-artifact@v4
        with:
          # Artifact name
-         name: _book # optional
+         name: book_site # optional
          # Destination path
          path: _book # optional
      - name: Deploy to GitHub Pages
-       uses: Cecilapp/GitHub-Pages-deploy@master
-       env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+       uses: peaceiris/actions-gh-pages@v3
        with:
-          email: yanmin@stanford.edu            # must be a verified email
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _book
+          destination_dir: ""  
+          user_name: "github-actions[bot]"
+          user_email: yanmin@stanford.edu            # must be a verified email
           build_dir: _book/                     # "_site/" by default
           branch: gh-pages
 
