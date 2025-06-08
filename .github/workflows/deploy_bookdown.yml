@@ -46,7 +46,7 @@ jobs:
        env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
        with:
-          email: dcard@stanford.edu            # must be a verified email
+          email: yanmin@stanford.edu            # must be a verified email
           build_dir: _book/                     # "_site/" by default
           branch: gh-pages
 
